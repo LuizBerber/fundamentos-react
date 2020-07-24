@@ -2,19 +2,10 @@ import './index.css'
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-import First from './components/basics/First'
-import Second from './components/basics/WithParameter'
-import Fragment from './components/basics/Fragment'
+import App from './App'
 
 ReactDOM.render(
-    <div>
-        <First></First>
-        <br/>
-        <Second 
-            question='The answer to the Ultimate Question of Life, the Universe, and Everything' 
-            answer={42} />
-        <Fragment/>
-    </div>,
+    <App />,
     document.getElementById('root')
 )
 

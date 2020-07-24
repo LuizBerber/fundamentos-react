@@ -9,8 +9,8 @@ export default function Fragment(props){
         Fazemos isso para retornar elementos sem a necessidade de envolve-los em uma div
         */
         <>
-            <h2>Fragment</h2>
-            <p>Beware of this error!</p>
+            <h2>Caudition!</h2>
+            <p>Beware of this error</p>
         </>
     )
 }
