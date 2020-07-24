@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 
 import First from './components/basics/First'
 import Second from './components/basics/WithParameter'
@@ -10,19 +11,21 @@ import Card from './components/layout/Card'
 // export default function (props) {
 
 export default _ =>
-    <div>
+    <div className='App'>
         <h1>React Foundations</h1>
-        <Card title='Random number'>
-            <Random min={7} max={10}/>
-        </Card>
-        <Card title='Fragment'>
-            <Fragment />
-        </Card>
-        <Card title='With parameter'>
-        <Second question='The answer to the Ultimate Question of Life, the Universe, and Everything'
-            answer={42} />
-        </Card>
-        <Card title='First Component'>
-        <First></First>
-        </Card>        
+        <div className='Cards'>
+            <Card title='Random number'color='#EB7260'>
+                <Random min={7} max={10}/>
+            </Card>
+            <Card title='Fragment' color='#29ABA4'>
+                <Fragment />
+            </Card>
+            <Card title='With parameter' color='#3A9AD9'>
+            <Second question='The answer to the Ultimate Question of Life, the Universe, and Everything'
+                answer={42} />
+            </Card>
+            <Card title='First Component' color='#354458'>
+            <First></First>
+            </Card>
+        </div>        
     </div>
