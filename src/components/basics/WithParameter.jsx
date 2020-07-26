@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function WithParameter(props){
-    const result = props.answer == 42 ? 'correct' : 'incorrect'
+    const result = props.answer === 42 ? 'correct' : 'incorrect'
     return(
         <div>
             <p>

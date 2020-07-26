@@ -1,0 +1,15 @@
+.ProductsTable table {
+    width: 100%;
+}
+
+.ProductsTable thead {
+    background-color: #BA6611;
+}
+
+.ProductsTable .Odd {
+    background-color: rgb(212, 211, 211);
+}
+
+.ProductsTable .Even {
+    background-color: #FFF;
+}
