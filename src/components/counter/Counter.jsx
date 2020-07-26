@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import './Counter.css'
+import Display from './Display'
+import PassForm from './PassForm'
+import Buttons from './Buttons'
 
 class Counter extends Component {
 
@@ -20,9 +23,9 @@ class Counter extends Component {
         })
     }
 
-    setPass = (e) => {
+    setPass = (newPass) => {
         this.setState({
-            pass: +e.target.value
+            pass: newPass
         })
     }
 
@@ -30,13 +33,9 @@ class Counter extends Component {
         return (
             <div className='Counter'>
                 <h2>Counter</h2>
-                <p>{this.state.number}</p>
-                <div>
-                    <label htmlFor='inputPass'>Pass: </label>
-                    <input id='inputPass' type='number' value={this.state.pass} onChange={this.setPass}/>
-                </div>
-                <button onClick={this.increment}> + </button>
-                <button onClick={this.decrement}> - </button>
+                <Display number={this.state.number}/>
+                <PassForm pass={this.state.pass} setPass={this.setPass}/>
+                <Buttons setIncrement={this.increment} setDecrement={this.decrement}/>
             </div>
         )
     }
