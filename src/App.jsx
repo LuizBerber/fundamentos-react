@@ -15,6 +15,7 @@ import UserInfo from './components/conditional/UserInfo'
 import DirectFather from './components/comunication/DirectFather'
 import IndirectFather from './components/comunication/IndirectFather'
 import Input from './components/form/Input'
+import Counter from './components/counter/Counter'
 // Quando usamos o export DEFAULT, é possível usar uma função anônima (sem nome)
 // export default function (props) {
 
@@ -22,6 +23,9 @@ export default _ =>
     <div className='App'>
         <h1>React Foundations</h1>
         <div className='Cards'>
+            <Card title='Counter (class based)'color='rgb(140, 50, 110)'>
+                <Counter initialNumber={10}/>
+            </Card>
             <Card title='Controlled Component (input)'color='rgb(140, 70, 170)'>
                 <Input />
             </Card>
